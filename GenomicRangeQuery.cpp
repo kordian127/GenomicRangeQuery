@@ -17,17 +17,11 @@ int main(){
 
 
     for (int i=0;i<m;i++){
-        if(p[i]==q[i]){
-            char znak=s[p[i]];
-            cout<<znak<<endl;
+        for(int j=p[i];j<=q[i];j++){
+            char znak=s[j];
+            cout<<znak;
         }
-        else{
-            for(int j=p[i];j<q[i];j++){
-                char znak=s[j];
-                cout<<znak;
-            }
-            cout<<endl;
-        }
+        cout<<endl;
     }
 
 
